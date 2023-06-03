@@ -1,9 +1,9 @@
 :root {
     --headingFont: 'Playfair Display', serif;
     --contentFont: 'Source Sans Pro', sans-serif;
-    --backgroundColor: #C8D0E1;
-    --cardColor: #A5B2C2;
-    --buttonColor: #252C5B;
+    --backgroundColor: rgb(200, 209, 225, 0.5);
+    --cardColor: rgb(133, 141, 149, 0.3);
+    --buttonColor: rgb(35, 43, 91);
 }
 body {
     background-color: var(--backgroundColor);
@@ -27,6 +27,11 @@ body {
 .nav-link {
     margin: 0 50px;
     font-family: var(--headingFont);
+    color: black;
+}
+
+.nav-link:visited, .currentWorkLink:visited {
+    color: black;
 }
 
 /*Main*/
@@ -36,7 +41,7 @@ h1 {
     font-size: 60px;
 }
 
-h2, h5, h6 {
+h2, h5, h6, span {
     font-family: var(--contentFont);
 }
 
@@ -78,7 +83,6 @@ h4 {
 }
 
 .project {
-    border: 1px solid black;
     border-radius: 10px;
     background: var(--cardColor);
     margin: 15px;
@@ -97,7 +101,7 @@ h4 {
 
 button {
     background-color: var(--buttonColor);
-    border: 1px solid black;
+    border: 1px solid var(--buttonColor);
     border-radius: 20px;
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -105,8 +109,20 @@ button {
 
 a {
     text-decoration: none;
-    color: white;
     font-family: var(--contentFont);
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.projectLink {
+    color: white;
+}
+
+.projectLink:visited {
+    color: white;
 }
 
 /*Footer*/
@@ -114,6 +130,12 @@ a {
 footer {
     border-top: 1px solid black;
     padding-top: 40px;
+    background: var(--buttonColor);
+    color: white;
+}
+
+h6 {
+    font-size: 18px;
 }
 
 input, .textbox{
