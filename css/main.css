@@ -44,6 +44,18 @@ main {
     margin: 200px 0 400px 0;
 }
 
+.mainContent {
+    padding-left: 100px;
+}
+
+.currentWorkLink {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+    color: black;
+    font-family: var(--contentFont);
+}
+
 
 
 
@@ -88,7 +100,7 @@ button {
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
 a {
