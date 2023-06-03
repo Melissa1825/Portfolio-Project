@@ -140,13 +140,16 @@
       </div>
 
       <div class="form col-md-6">
-        <form>
           <h6>Send a message</h6>
-          <input type="name" placeholder="Enter your name">
-          <textarea placeholder="Start typing your message"></textarea>
-          <button class="sendButton" type="button">Send</button>
-        </form>
+          <form action="https://formsubmit.co/mel.robinson18@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input class="textbox" type="text" name="textbox" placeholder="Start typing your message" required>
+            <input type="hidden" name="_subject" value="New submission!">
+            <button type="submit">Send</button>
+       </form>
       </div>
+
+     
 
     </div>
   </div>
