@@ -140,3 +140,26 @@ textarea {
 i {
     margin: 0 5px;
 }
+
+
+@media (max-width:800px) {
+
+    .mainImg {
+        display: none;
+    }
+
+    .mainContent {
+        display: none;
+    }
+
+    .mainMediaContent {
+        text-align: center;
+    }
+}
+
+@media (min-width:801px) {
+
+    .mainMediaContent {
+        display: none;
+    }
+}
