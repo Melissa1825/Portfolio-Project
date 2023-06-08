@@ -1,9 +1,10 @@
 :root {
     --headingFont: 'Playfair Display', serif;
     --contentFont: 'Source Sans Pro', sans-serif;
-    --backgroundColor: rgb(200, 209, 225, 0.5);
-    --cardColor: rgb(133, 141, 149, 0.3);
-    --buttonColor: rgb(35, 43, 91);
+    --backgroundColor: #EBEEF3;
+    --cardColor: #D0D3D8;
+    --buttonColor: #3D495B;
+    --footerColor: #3D495B;
 }
 body {
     background-color: var(--backgroundColor);
@@ -11,6 +12,16 @@ body {
 }
 
 /*Navbar*/
+.logo {
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
 .navbar {
     background-color: var(--backgroundColor);
     border-bottom: 1px solid black;
@@ -53,6 +64,10 @@ main {
     padding-left: 100px;
 }
 
+.mainImg {
+    border-radius: 10px;
+}
+
 .currentWorkLink {
     display: flex;
     justify-content: center;
@@ -92,6 +107,7 @@ h4 {
 .projectImg {
     width: 100%;
     height: 230px;
+    border-radius: 10px;
 }
 
 .projectDescription {
@@ -111,23 +127,23 @@ button {
 a {
     text-decoration: none;
     font-family: var(--contentFont);
-    color: white;
+    color: #FFFFFF;
 }
 
 a:visited {
-    color: white;
+    color: #FFFFFF;
 }
 
 .projectLink {
-    color: white;
+    color: #FFFFFF;
 }
 
 .projectLink:visited {
-    color: white;
+    color: #FFFFFF;
 }
 
 button:hover {
-    background: yellow;
+    background: #7D979F;
 }
 
 /*Footer*/
@@ -135,8 +151,8 @@ button:hover {
 footer {
     border-top: 1px solid black;
     padding-top: 40px;
-    background: var(--buttonColor);
-    color: white;
+    background: var(--footerColor);
+    color: #FFFFFF;
 }
 
 h6 {
@@ -158,7 +174,8 @@ input, .textbox{
 }
 
 .sendButton {
-    color: white;
+    background: #FFFFFF;
+    
 }
 
 .social {
