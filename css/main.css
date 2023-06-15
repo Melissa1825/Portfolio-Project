@@ -45,7 +45,7 @@ body {
     color: black;
 }
 
-/*Main*/
+/*Main Home*/
 h1 {
     font-family: var(--headingFont);
     font-weight: 600;
@@ -57,24 +57,40 @@ h2, h5, h6, span {
 }
 
 main {
-    margin: 200px 0 400px 0;
+    margin: 200px 0 500px 0;
 }
 
-.mainContent {
-    padding-left: 100px;
+.mainHome {
+    text-align: center;
 }
 
-.mainImg {
-    border-radius: 10px;
-}
-
-.currentWorkLink {
+.featuredWorkLink {
     display: flex;
     justify-content: center;
     margin: 90px 0;
     color: black;
     font-family: var(--contentFont);
     font-size: 18px;
+}
+
+.featuredWorkLink:visited {
+    color: black;
+}
+
+/*MAIN WORK*/
+.mainWork h1 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+
+/*MAIN ABOUT*/
+.mainAbout h1 {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.aboutImg {
+    border-radius: 10px;
 }
 
 
@@ -189,26 +205,15 @@ i {
 
 @media (max-width:800px) {
 
-    .mainImg {
+    .aboutImg {
         display: none;
     }
 
-    .mainContent {
-        display: none;
-    }
-
-    .mainMediaContent {
+    .mainAbout {
         text-align: center;
     }
 
     .form {
         margin-top: 40px;
-    }
-}
-
-@media (min-width:801px) {
-
-    .mainMediaContent {
-        display: none;
     }
 }
